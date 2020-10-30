@@ -60,6 +60,6 @@ app.post("/sendMsg", async function (req, res) {
     console.log(data);
     console.log("--------------------");
   });
-  console.log("terminou");
+
   res.send("Foi escrito no topico: " + req.body.topic);
 });
