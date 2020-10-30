@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
 })); 
 
 Producer = kafka.Producer,
-client = new kafka.KafkaClient({kafkaHost: 'localhost:9092'}),
+client = new kafka.KafkaClient({kafkaHost: '192.168.1.56:9092'}),
 producer = new Producer(client);
 
 producer.on('ready', function () {
