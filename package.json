@@ -4,16 +4,19 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "producer":"node producer",
-    "consumer":"node consumer",
-    "log":"node logConsumer"
+    "producer": "nodemon producer",
+    "consumer": "nodemon consumer",
+    "log": "nodemon logConsumer"
   },
   "dependencies": {
-    "avsc": "^5.5.2",
+    "avsc": "^5.5.3",
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "kafka-node": "^5.0.0",
     "mongodb": "^3.6.2",
     "mongoose": "^5.10.11"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
   }
 }
