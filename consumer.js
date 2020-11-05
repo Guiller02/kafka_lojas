@@ -4,7 +4,7 @@ const Produto = require('./database/model/produto');
 const kafka = require('kafka-node'),
 
 Consumer = kafka.Consumer,
-client = new kafka.KafkaClient({kafkaHost: 'localhost:9092'}),
+client = new kafka.KafkaClient({kafkaHost: '192.168.1.20:9092'}),
 consumer = new Consumer(
     client,
     [
